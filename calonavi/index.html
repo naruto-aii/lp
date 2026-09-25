@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>今日、あと何kcalか。｜カロナビ</title>
+    <meta
+      name="description"
+      content="カロナビは、食事・運動・体重をまとめて見るエネルギー管理アプリです。今日あと何kcalかとPFCの目安から、毎日の次の一手を短くします。診断や治療のためのアプリではありません。"
+    />
+    <link rel="canonical" href="https://naruto-aii.github.io/company-os/cm/" />
+    <meta property="og:title" content="今日、あと何kcalか。｜カロナビ" />
+    <meta
+      property="og:description"
+      content="食事・運動・体重をまとめて、今日の判断だけを残すエネルギー管理アプリ。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://naruto-aii.github.io/company-os/cm/" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:image" content="https://naruto-aii.github.io/company-os/cm/img/hero-morning.jpg" />
+    <meta name="theme-color" content="#123d24" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">本文へスキップ</a>
+    <div class="sheet">
+      <main id="main">
+        <section class="fv" id="top">
+          <p class="logo">カロナビ</p>
+          <p class="kicker">Energy management</p>
+          <h1>今日、<br />あと何kcalか。</h1>
+          <p class="dek">
+            食事も、運動も、体重も。<br />
+            迷う前に、今日の収支だけを見る。
+          </p>
+          <div class="stage">
+            <img
+              src="img/hero-morning.jpg"
+              alt="朝の光が差す食卓。ごはんと卵、味噌汁が並び、窓辺で一日が始まっている"
+            />
+            <ul class="stage-notes">
+              <li>食事</li>
+              <li>運動</li>
+              <li>体重</li>
+            </ul>
+            <aside class="phone" aria-label="画面イメージ。表示の数値は例です">
+              <div class="phone-screen">
+                <div class="phone-top">
+                  <span>TODAY</span>
+                  <span>画面イメージ</span>
+                </div>
+                <p class="phone-label">あと</p>
+                <p class="phone-num">842<span>kcal</span></p>
+                <ul class="bars">
+                  <li>
+                    <span>たんぱく質</span>
+                    <span class="track"><i style="width: 56%"></i></span>
+                  </li>
+                  <li>
+                    <span>脂質</span>
+                    <span class="track"><i style="width: 66%"></i></span>
+                  </li>
+                  <li>
+                    <span>炭水化物</span>
+                    <span class="track"><i style="width: 59%"></i></span>
+                  </li>
+                </ul>
+                <p class="phone-note">数値は例です。実際の画面は目標によって変わります。</p>
+              </div>
+            </aside>
+          </div>
+          <p class="price-line">
+            <span>基本機能</span>
+            <strong>無料</strong>
+            <small>カロナビ+は任意</small>
+          </p>
+          <a class="btn" href="#download">基本無料ではじめる</a>
+          <p class="micro">診断・治療のためのアプリではありません。</p>
+        </section>
+
+        <section class="block worries" id="worries">
+          <p class="kicker">Daily friction</p>
+          <h2>こんな毎日、<br />続いていませんか。</h2>
+          <p class="section-lead">
+            忙しい日ほど、細かい栄養の話より先に必要なのは、今の収支です。
+          </p>
+
+          <article class="worry">
+            <img
+              src="img/worry-fridge.jpg"
+              alt="夜、開いた冷蔵庫の前で、何をどれだけ食べるか迷っている手元"
+            />
+            <div class="worry-body">
+              <span class="num">01</span>
+              <h3>何を、どれだけ食べればいいか分からない。</h3>
+              <p>
+                冷蔵庫の前で立ち止まる夜。正解を探すほど、食事そのものが遅れます。
+              </p>
+            </div>
+          </article>
+
+          <article class="worry">
+            <img
+              src="img/worry-lunch.jpg"
+              alt="オフィスの昼、弁当を前に、量の判断を迷っている様子"
+            />
+            <div class="worry-body">
+              <span class="num">02</span>
+              <h3>食べた記録は、残っている。判断は、残っていない。</h3>
+              <p>
+                入力したあとで、今日あとどれくらい食べられるかが曖昧なままなら、次の一手は出ません。
+              </p>
+            </div>
+          </article>
+
+          <article class="worry">
+            <img
+              src="img/worry-gym.jpg"
+              alt="静かなジムで、今日どれだけ動けばよいか考えている人"
+            />
+            <div class="worry-body">
+              <span class="num">03</span>
+              <h3>運動したい。でも、今日の食事とつながらない。</h3>
+              <p>
+                何分歩けばよいか、トレーニングをどこまで数えればよいか。単体の頑張りは、収支になりにくい。
+              </p>
+            </div>
+          </article>
+
+          <p class="bridge">
+            カロリーも、PFCも。<br />
+            計算は、画面の向こうへ。
+          </p>
+        </section>
+
+        <section class="cta-band">
+          <p>まずは、今日の残りから。</p>
+          <a class="btn" href="#download">基本無料ではじめる</a>
+        </section>
+
+        <section class="block define" id="about">
+          <p class="kicker">What it is</p>
+          <h2>記録アプリではない。<br />エネルギー管理アプリ。</h2>
+          <p class="lead">
+            カロナビは、食事・運動・体重をまとめて見るアプリです。中心にあるのは「今日あと何kcalか」と、たんぱく質・脂質・炭水化物の目安。減量・維持・増量のどれを選んでも、出すのは今日の判断です。
+          </p>
+          <p class="section-lead">
+            複雑な計算は内側で行います。外側に残すのは、次にどう動くかだけ。医療の診断や治療の代わりにはなりません。
+          </p>
+          <ul class="checks">
+            <li><i></i><span>今日あと何kcalか、PFCの目安</span></li>
+            <li><i></i><span>食事は、手入力・バーコード・保存食品・公開食品・テンプレート</span></li>
+            <li><i></i><span>アルコールは、食事と別の記録</span></li>
+            <li><i></i><span>運動は、MET計算かkcalの直接入力</span></li>
+            <li><i></i><span>体重の一覧、追加、編集、削除</span></li>
+            <li><i></i><span>目標は、減量・維持・増量</span></li>
+          </ul>
+        </section>
+
+        <section class="block" id="steps" style="padding-top: 0">
+          <p class="kicker">Three steps</p>
+          <h2>毎日、短く3つ。</h2>
+          <div class="steps">
+            <article class="step">
+              <p class="idx">01</p>
+              <h3>見る</h3>
+              <p>今日あと何kcalか。たんぱく質、脂質、炭水化物の目安。先に、残りを見る。</p>
+            </article>
+            <article class="step">
+              <p class="idx">02</p>
+              <h3>入れる</h3>
+              <p>手入力、バーコード（カメラと番号）、保存した食品、公開食品、テンプレート。食事のたびに、長い手順はいりません。</p>
+            </article>
+            <article class="step">
+              <p class="idx">03</p>
+              <h3>戻す</h3>
+              <p>食べ過ぎた日も、超過を事実として見ます。隠さず、次の日の感覚を残すための記録です。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="essays" id="features">
+          <p class="kicker">Inside the day</p>
+          <h2>一日の中で、<br />何が前に出るか。</h2>
+
+          <article class="essay">
+            <p class="essay-no">01</p>
+            <h3>今日の残りを、先に出す。</h3>
+            <p class="body">
+              食べたものを残すだけでは、次の食事は決まりません。目標に対して、今日あとどれだけか。カロナビがその数字を先に置きます。
+            </p>
+            <p class="ribbon">判断が、記録より前に来る。</p>
+          </article>
+
+          <article class="essay">
+            <p class="essay-no">02</p>
+            <h3>PFCは、同じ画面の目安。</h3>
+            <p class="body">
+              カロリーだけでは、食事の中身は見えません。たんぱく質、脂質、炭水化物の目安を、今日の残りと一緒に確認できます。
+            </p>
+            <p class="ribbon">数字は増やす。操作は増やさない。</p>
+          </article>
+
+          <article class="essay">
+            <p class="essay-no">03</p>
+            <h3>入力は、続く短さで。</h3>
+            <p class="body">
+              手で入れる。バーコードをカメラで読む。番号から探す。前に保存した食品、公開されている食品、テンプレートからも足せます。公開食品の検索は、無料では1日5回までです。
+            </p>
+            <figure class="shot">
+              <img
+                src="img/barcode-scan.jpg"
+                alt="キッチンの光の中で、食品パッケージのバーコードをスマートフォンに向けている手元"
+              />
+              <figcaption class="ribbon">探す時間を、食事の時間に戻す。</figcaption>
+            </figure>
+          </article>
+
+          <article class="essay">
+            <p class="essay-no">04</p>
+            <h3>運動は、食事と同じ収支へ。</h3>
+            <p class="body">
+              運動はMETによる計算か、kcalの直接入力です。歩いた分も、トレーニングの分も、摂取と切り離さない。今日のエネルギーとして戻します。
+            </p>
+            <figure class="shot tall">
+              <img
+                src="img/walk-street.jpg"
+                alt="午後の並木道を、急がずに歩いている人の後ろ姿"
+              />
+              <figcaption class="ribbon">頑張りの量を、今日の残りに戻す。</figcaption>
+            </figure>
+          </article>
+
+          <article class="essay">
+            <p class="essay-no">05</p>
+            <h3>体重は、一日の点数にしない。</h3>
+            <p class="body">
+              体重は一覧で追加、編集、削除できます。朝の一回で成否は決まりません。長い収支の結果として、静かに残します。
+            </p>
+            <figure class="shot">
+              <img
+                src="img/morning-scale.jpg"
+                alt="朝のバスルーム。タオルと水のそばに、表示の見えない体重計が置かれている"
+              />
+              <figcaption class="ribbon">一日の良し悪しを、体重に預けない。</figcaption>
+            </figure>
+          </article>
+
+          <article class="essay">
+            <p class="essay-no">06</p>
+            <h3>お酒は、食事と混ぜない。</h3>
+            <p class="body">
+              アルコールは食事とは別の記録です。夜の一杯を、昼ごはんの誤差にしないためです。
+            </p>
+            <figure class="shot">
+              <img
+                src="img/evening-drink.jpg"
+                alt="夜のテーブル。グラスと枝豆、伏せたスマートフォンがランプの光に照らされている"
+              />
+              <figcaption class="ribbon">夜は夜のまま、記録する。</figcaption>
+            </figure>
+          </article>
+        </section>
+
+        <figure class="quote-band">
+          <img
+            src="img/quiet-return.jpg"
+            alt="夕方の光が差す、静かな玄関。靴が一足置かれている"
+          />
+          <figcaption>
+            <strong>外側は短く。<br />内側は、根拠に寄せる。</strong>
+            <span>
+              画面に出すのは行動です。計算は、再現できる知見を優先して内側に置きます。分からないことは、分からないと伝えます。断定できないものは、断定しません。
+            </span>
+          </figcaption>
+        </figure>
+
+        <section class="block fit" id="fit">
+          <p class="kicker">For whom</p>
+          <h2>向いている人。<br />向いていない人。</h2>
+          <div class="fit-grid">
+            <article class="card good">
+              <h3>向いている人</h3>
+              <ul>
+                <li>「今日あとどれくらい？」を先に知りたい</li>
+                <li>記録より、判断を短くしたい</li>
+                <li>減量・維持・増量を、数字で見たい</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>向いていない人</h3>
+              <ul>
+                <li>医師の診断や治療の代わりを求める方</li>
+                <li>食事写真の自動解析だけが欲しい方（現状の主機能ではありません）</li>
+                <li>ログインせずに使いたい方（GoogleまたはAppleが必要です）</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="block price" id="price">
+          <p class="kicker">Price</p>
+          <h2>まずは無料。<br />必要なら、カロナビ+。</h2>
+          <div class="price-grid">
+            <article class="price-card">
+              <p class="tag">FREE</p>
+              <strong>無料</strong>
+              <p>公開食品の検索は1日5回まで。食事テンプレート3、運動テンプレート3。</p>
+            </article>
+            <article class="price-card plus">
+              <p class="tag">CALONAVI+</p>
+              <strong>月額480円</strong>
+              <p>
+                公開食品の検索や、テンプレートの上限を広げます。年額は4,800円の予定で、月額の12回より約2ヶ月分おトクです。
+              </p>
+            </article>
+          </div>
+          <p class="note">
+            料金は作業上の予定価格です。最終の金額、内容、無料枠は App Store の購入画面の表示が正です。購入と復元はアプリ内で行います。
+          </p>
+        </section>
+
+        <section class="cta-band">
+          <p>今日の残りだけ、<br />先に見てみる。</p>
+          <a class="btn" href="#download">基本無料ではじめる</a>
+        </section>
+
+        <section class="block scenes" id="scenes">
+          <p class="kicker">A day, imagined</p>
+          <h2>使い方の場面。</h2>
+          <p class="section-lead">利用者の声ではありません。想定している一日です。</p>
+          <div class="scene-list">
+            <article class="scene">
+              <b>MORNING</b>
+              <div>
+                <h3>出る前に、残りを見る。</h3>
+                <p>朝食のあと、今日あと何kcalかを確認してから家を出る。計算式は開きません。</p>
+              </div>
+            </article>
+            <article class="scene">
+              <b>NOON</b>
+              <div>
+                <h3>弁当は、バーコードで足す。</h3>
+                <p>昼の数分で入力を終えて、午後の残りだけを残す。</p>
+              </div>
+            </article>
+            <article class="scene">
+              <b>NIGHT</b>
+              <div>
+                <h3>食べ過ぎは、隠さない。</h3>
+                <p>超過は超過のまま見る。お酒は食事と分けて、翌日の感覚を残す。</p>
+              </div>
+            </article>
+          </div>
+          <p class="disclaimer">上記は製品の使い方の想定であり、個人の体験談や効果の保証ではありません。</p>
+        </section>
+
+        <section class="block faq" id="faq">
+          <p class="kicker">Questions</p>
+          <h2>よくある質問</h2>
+          <details>
+            <summary>カロナビとは何ですか？</summary>
+            <p>
+              食事・運動・体重をまとめて、「今日あと何kcalか」から次の一手を短くするエネルギー管理アプリです。診断や治療のアプリではありません。
+            </p>
+          </details>
+          <details>
+            <summary>他の食事管理アプリと何が違いますか？</summary>
+            <p>
+              他社のサービスを下げる比較はしません。記録や助言が厚いサービスがある一方、カロナビは「今日のエネルギー判断」を主役にした設計です。用途の違いです。
+            </p>
+          </details>
+          <details>
+            <summary>ログインは必要ですか？</summary>
+            <p>必要です。Google、またはAppleでログインします。ゲストのまま使うことはできません。</p>
+          </details>
+          <details>
+            <summary>料金はいくらですか？</summary>
+            <p>
+              基本機能には無料枠があります。カロナビ+の予定価格は月額480円、年額4,800円です。最終的な料金は App Store の購入画面の表示が正です。
+            </p>
+          </details>
+          <details>
+            <summary>いつ使えますか？</summary>
+            <p>App Store で公開しています。このページからのストアリンクは、いま準備中です。</p>
+          </details>
+          <details>
+            <summary>医療目的で使えますか？</summary>
+            <p>
+              使えません。一般的な式に基づく推定であり、診断、治療、医療機器の代替ではありません。体調に不安があるときは、医療機関に相談してください。
+            </p>
+          </details>
+        </section>
+
+        <section class="download" id="download">
+          <p class="kicker">Start</p>
+          <h2>今日、<br />あと何kcalか。</h2>
+          <div class="panel">
+            <p>
+              App Store で公開中です。<br />
+              ストアへのリンクは準備中です。
+            </p>
+            <p class="micro">
+              基本機能は無料ではじめられます。カロナビ+は、必要な人だけの任意オプションです。
+            </p>
+            <p class="micro">
+              問い合わせ:
+              <a href="mailto:calonavi.ayg.support@gmail.com">calonavi.ayg.support@gmail.com</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="spec-wrap" aria-labelledby="spec-title">
+          <h2 id="spec-title" class="kicker" style="margin-bottom: 14px">Information</h2>
+          <table class="spec">
+            <tbody>
+              <tr>
+                <th>サービス名</th>
+                <td>カロナビ</td>
+              </tr>
+              <tr>
+                <th>区分</th>
+                <td>エネルギー管理アプリ。医療機器ではなく、診断・治療を目的としません。</td>
+              </tr>
+              <tr>
+                <th>主な機能</th>
+                <td>
+                  今日あと何kcalか、PFCの目安、食事（手入力・バーコード・保存食品・公開食品・テンプレート）、アルコールの別記録、運動（METまたはkcal直接入力）、体重の一覧と編集、目標（減量・維持・増量）
+                </td>
+              </tr>
+              <tr>
+                <th>ログイン</th>
+                <td>Google または Sign in with Apple。ゲスト利用はありません。</td>
+              </tr>
+              <tr>
+                <th>料金</th>
+                <td>
+                  無料枠あり。カロナビ+の予定価格は月額480円／年額4,800円。最終表示は App Store の購入画面が正です。
+                </td>
+              </tr>
+              <tr>
+                <th>提供</th>
+                <td>App Store で公開中。このページのストアリンクは準備中です。</td>
+              </tr>
+              <tr>
+                <th>運営</th>
+                <td>麹池成</td>
+              </tr>
+              <tr>
+                <th>サポート</th>
+                <td>
+                  <a href="mailto:calonavi.ayg.support@gmail.com">calonavi.ayg.support@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <th>法務</th>
+                <td>
+                  <a href="https://naruto-aii.github.io/AYG/legal/" target="_blank" rel="noopener noreferrer"
+                    >プライバシー、規約、特商法など</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th>更新日</th>
+                <td>2026-09-25</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <footer class="site-foot">
+        <p class="logo">カロナビ</p>
+        <p>
+          診断・治療のアプリではありません。<br />
+          運営: 麹池成<br />
+          サポート:
+          <a href="mailto:calonavi.ayg.support@gmail.com">calonavi.ayg.support@gmail.com</a><br />
+          法務:
+          <a href="https://naruto-aii.github.io/AYG/legal/" target="_blank" rel="noopener noreferrer"
+            >naruto-aii.github.io/AYG/legal</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <div class="dock">
+      <a href="#download">基本無料ではじめる</a>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
