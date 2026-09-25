@@ -3,22 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>今日、あと何kcalか。｜カロナビ</title>
+    <title>今日、あと何kcalか。｜カロナビ（食事・運動・体重のエネルギー管理）</title>
     <meta
       name="description"
-      content="カロナビは、食事・運動・体重をまとめて見るエネルギー管理アプリです。今日あと何kcalかとPFCの目安から、毎日の次の一手を短くします。診断や治療のためのアプリではありません。"
+      content="カロナビは、食事・運動・体重・アルコールをその日の単位で見るエネルギー管理アプリです。今日あと何kcalかとPFCの目安を表示します。食べ過ぎを翌日の目標へ繰り越す機能はありません。診断や治療のアプリではありません。"
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="麹池成" />
+    <meta name="theme-color" content="#0c3320" />
     <link rel="canonical" href="https://naruto-aii.github.io/lp/calonavi/" />
+    <meta property="og:site_name" content="カロナビ" />
     <meta property="og:title" content="今日、あと何kcalか。｜カロナビ" />
     <meta
       property="og:description"
-      content="食事・運動・体重をまとめて、今日の判断だけを残すエネルギー管理アプリ。"
+      content="今日あと何kcalかとPFCの目安を、その日の食事・運動・体重・アルコールから見ます。超過の翌日繰り越しはありません。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://naruto-aii.github.io/lp/calonavi/" />
     <meta property="og:locale" content="ja_JP" />
     <meta property="og:image" content="https://naruto-aii.github.io/lp/calonavi/img/hero-morning.jpg" />
-    <meta name="theme-color" content="#123d24" />
+    <meta property="og:image:alt" content="朝の光が差す食卓。ごはんと卵、味噌汁が並んでいる" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="今日、あと何kcalか。｜カロナビ" />
+    <meta
+      name="twitter:description"
+      content="今日あと何kcalかとPFCの目安を、その日の記録から見ます。超過の翌日繰り越しはありません。"
+    />
+    <meta name="twitter:image" content="https://naruto-aii.github.io/lp/calonavi/img/hero-morning.jpg" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +38,141 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://naruto-aii.github.io/lp/#website",
+            "name": "カロナビ",
+            "url": "https://naruto-aii.github.io/lp/calonavi/",
+            "inLanguage": "ja",
+            "publisher": { "@id": "https://naruto-aii.github.io/lp/calonavi/#org" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://naruto-aii.github.io/lp/calonavi/#org",
+            "name": "麹池成",
+            "email": "calonavi.ayg.support@gmail.com"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://naruto-aii.github.io/lp/calonavi/#webpage",
+            "url": "https://naruto-aii.github.io/lp/calonavi/",
+            "name": "今日、あと何kcalか。｜カロナビ",
+            "description": "カロナビは、食事・運動・体重・アルコールをその日の単位で見るエネルギー管理アプリです。今日あと何kcalかとPFCの目安を表示します。食べ過ぎを翌日の目標へ繰り越す機能はありません。",
+            "inLanguage": "ja",
+            "dateModified": "2026-09-25",
+            "isPartOf": { "@id": "https://naruto-aii.github.io/lp/#website" },
+            "about": { "@id": "https://naruto-aii.github.io/lp/calonavi/#app" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://naruto-aii.github.io/lp/calonavi/img/hero-morning.jpg"
+            }
+          },
+          {
+            "@type": "MobileApplication",
+            "@id": "https://naruto-aii.github.io/lp/calonavi/#app",
+            "name": "カロナビ",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "iOS",
+            "inLanguage": "ja",
+            "description": "食事・運動・体重・アルコールをその日の単位で見て、今日あと何kcalかとPFCの目安を表示するエネルギー管理アプリ。診断や治療のためのアプリではありません。",
+            "featureList": [
+              "今日あと何kcalか（残りカロリー）とその日の超過の表示",
+              "たんぱく質・脂質・炭水化物（PFC）の目安",
+              "食事の手入力、バーコード、保存食品、公開食品、食事テンプレート",
+              "アルコールを食事と分けて記録",
+              "運動は種目と時間からのMET計算、または追加消費kcalの手入力。追加分だけ今日の残りカロリーに加算",
+              "体重の追加、編集、削除と推移",
+              "目標は減量、維持、増量",
+              "対応する端末ではAppleヘルスケア連携（任意）。ヘルスケアの当日消費カロリーは参考表示で、食事目標には加算しない",
+              "日ごとの履歴カレンダー。未来の日付には記録できない"
+            ],
+            "author": { "@id": "https://naruto-aii.github.io/lp/calonavi/#org" },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "JPY",
+              "availability": "https://schema.org/InStock",
+              "description": "価格がある場合は、各ストアの購入画面の表示が正です。このページでは金額を断定しません。"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://naruto-aii.github.io/lp/calonavi/#faq",
+            "url": "https://naruto-aii.github.io/lp/calonavi/#faq",
+            "inLanguage": "ja",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "カロナビとは何ですか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "食事・運動・体重・アルコールをその日の単位で見て、今日あと何kcalかとPFCの目安を表示するエネルギー管理アプリです。診断や治療のアプリではありません。表示は推定です。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "今日のカロリー超過は翌日に繰り越されますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "いいえ。超過はその日の超過として表示します。翌日の目標カロリーへ自動で反映する機能は、いまありません。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "食事はどう記録しますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "手入力、バーコード（カメラまたは番号）、保存した食品、公開食品、食事テンプレートから記録します。食事写真の自動解析はありません。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "運動はどう記録しますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "種目と時間からMETで計算するか、追加消費kcalを手入力します。ホームの残りカロリーに足されるのは、安静時を除いた追加分だけです。対応する端末ではAppleヘルスケアから歩数や運動を取り込めます。ヘルスケアの当日消費カロリーは参考表示で、食事目標には足しません。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ログインは必要ですか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "必要です。Google、またはAppleでログインします。ゲストのまま使うことはできません。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "料金はいくらですか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "このページでは金額を断定しません。有料の機能がある場合、価格と内容は各ストアの購入画面の表示が正です。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "医療目的で使えますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "使えません。表示は一般的な式に基づく推定であり、診断、治療、医療機器の代替ではありません。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "いつ使えますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "App Storeで公開しています。このページからのストアリンクは、いま準備中です。"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">本文へスキップ</a>
@@ -37,12 +183,14 @@
           <p class="kicker">Energy management</p>
           <h1>今日、<br />あと何kcalか。</h1>
           <p class="dek">
-            食事も、運動も、体重も。<br />
-            迷う前に、今日の収支だけを見る。
+            食事も、運動も、体重も、お酒も。<br />
+            見るのは、その日の収支です。
           </p>
           <div class="stage">
             <img
               src="img/hero-morning.jpg"
+              width="864"
+              height="1152"
               alt="朝の光が差す食卓。ごはんと卵、味噌汁が並び、窓辺で一日が始まっている"
             />
             <ul class="stage-notes">
@@ -77,12 +225,11 @@
             </aside>
           </div>
           <p class="price-line">
-            <span>基本機能</span>
-            <strong>無料</strong>
-            <small>カロナビ+は任意</small>
+            <span>その日の残り</span>
+            <strong>先に見る</strong>
           </p>
-          <a class="btn" href="#download">基本無料ではじめる</a>
-          <p class="micro">診断・治療のためのアプリではありません。</p>
+          <a class="btn" href="#download">使いはじめる</a>
+          <p class="micro">診断・治療のためのアプリではありません。超過を翌日の目標へ繰り越す機能はありません。</p>
         </section>
 
         <section class="block worries" id="worries">
@@ -95,93 +242,112 @@
           <article class="worry">
             <img
               src="img/worry-fridge.jpg"
+              width="1152"
+              height="864"
               alt="夜、開いた冷蔵庫の前で、何をどれだけ食べるか迷っている手元"
             />
             <div class="worry-body">
               <span class="num">01</span>
               <h3>何を、どれだけ食べればいいか分からない。</h3>
-              <p>
-                冷蔵庫の前で立ち止まる夜。正解を探すほど、食事そのものが遅れます。
-              </p>
+              <p>冷蔵庫の前で立ち止まる夜。正解を探すほど、食事そのものが遅れます。</p>
             </div>
           </article>
 
           <article class="worry">
             <img
               src="img/worry-lunch.jpg"
+              width="1152"
+              height="864"
               alt="オフィスの昼、弁当を前に、量の判断を迷っている様子"
             />
             <div class="worry-body">
               <span class="num">02</span>
               <h3>食べた記録は、残っている。判断は、残っていない。</h3>
-              <p>
-                入力したあとで、今日あとどれくらい食べられるかが曖昧なままなら、次の一手は出ません。
-              </p>
+              <p>入力したあとで、今日あとどれくらい食べられるかが曖昧なままなら、次の一手は出ません。</p>
             </div>
           </article>
 
           <article class="worry">
             <img
               src="img/worry-gym.jpg"
+              width="1152"
+              height="864"
               alt="静かなジムで、今日どれだけ動けばよいか考えている人"
             />
             <div class="worry-body">
               <span class="num">03</span>
               <h3>運動したい。でも、今日の食事とつながらない。</h3>
               <p>
-                何分歩けばよいか、トレーニングをどこまで数えればよいか。単体の頑張りは、収支になりにくい。
+                種目と時間から追加の消費を計算し、その分だけ今日の残りに足せます。いつもの通勤や家事は、生活活動の中に含まれます。
               </p>
             </div>
           </article>
 
           <p class="bridge">
             カロリーも、PFCも。<br />
-            計算は、画面の向こうへ。
+            出すのは、今日の数字です。
           </p>
         </section>
 
         <section class="cta-band">
           <p>まずは、今日の残りから。</p>
-          <a class="btn" href="#download">基本無料ではじめる</a>
+          <a class="btn" href="#download">使いはじめる</a>
         </section>
 
         <section class="block define" id="about">
           <p class="kicker">What it is</p>
-          <h2>記録アプリではない。<br />エネルギー管理アプリ。</h2>
+          <h2>記録で終わらせない。<br />今日のエネルギーを見る。</h2>
           <p class="lead">
-            カロナビは、食事・運動・体重をまとめて見るアプリです。中心にあるのは「今日あと何kcalか」と、たんぱく質・脂質・炭水化物の目安。減量・維持・増量のどれを選んでも、出すのは今日の判断です。
+            カロナビは、食事・運動・体重・アルコールをまとめて見るアプリです。中心にあるのは「今日あと何kcalか」と、たんぱく質・脂質・炭水化物の目安。減量・維持・増量のどれを選んでも、画面に出すのはその日の数字です。
           </p>
           <p class="section-lead">
-            複雑な計算は内側で行います。外側に残すのは、次にどう動くかだけ。医療の診断や治療の代わりにはなりません。
+            計算式は内側にあり、画面では根拠も開けます。表示は推定です。医療の診断や治療の代わりにはなりません。
           </p>
-          <ul class="checks">
-            <li><i></i><span>今日あと何kcalか、PFCの目安</span></li>
-            <li><i></i><span>食事は、手入力・バーコード・保存食品・公開食品・テンプレート</span></li>
-            <li><i></i><span>アルコールは、食事と別の記録</span></li>
-            <li><i></i><span>運動は、MET計算かkcalの直接入力</span></li>
-            <li><i></i><span>体重の一覧、追加、編集、削除</span></li>
-            <li><i></i><span>目標は、減量・維持・増量</span></li>
-          </ul>
+          <div class="fit-grid">
+            <article class="card good">
+              <h3>いまできること</h3>
+              <ul>
+                <li>今日あと何kcalか。その日の超過も、その日の数字として表示</li>
+                <li>PFC（たんぱく質・脂質・炭水化物）の目安</li>
+                <li>食事は、手入力・バーコード（カメラまたは番号）・保存食品・公開食品・テンプレート</li>
+                <li>アルコールは、食事と別の記録。純アルコール量とカロリーを計算し、PFCには配分しない</li>
+                <li>運動は、種目と時間からのMET計算か、追加消費kcalの手入力。追加分だけ今日の残りに加算</li>
+                <li>体重の追加、編集、削除。2回以上で推移</li>
+                <li>目標は、減量・維持・増量。目標体重と目標日</li>
+                <li>対応する端末では、Appleヘルスケア連携（任意）</li>
+                <li>日ごとの履歴。未来の日付には記録できない</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>いまないこと</h3>
+              <ul>
+                <li>今日の超過を、翌日の目標カロリーへ繰り越す</li>
+                <li>食事写真からの自動解析</li>
+                <li>ログインしない利用</li>
+                <li>未来の日付への記録</li>
+              </ul>
+            </article>
+          </div>
         </section>
 
-        <section class="block" id="steps" style="padding-top: 0">
+        <section class="block" id="steps">
           <p class="kicker">Three steps</p>
           <h2>毎日、短く3つ。</h2>
           <div class="steps">
             <article class="step">
               <p class="idx">01</p>
               <h3>見る</h3>
-              <p>今日あと何kcalか。たんぱく質、脂質、炭水化物の目安。先に、残りを見る。</p>
+              <p>今日あと何kcalか。たんぱく質、脂質、炭水化物の目安。先に、その日の残りを見る。</p>
             </article>
             <article class="step">
               <p class="idx">02</p>
               <h3>入れる</h3>
-              <p>手入力、バーコード（カメラと番号）、保存した食品、公開食品、テンプレート。食事のたびに、長い手順はいりません。</p>
+              <p>手入力、バーコード（カメラまたは番号）、保存した食品、公開食品、テンプレート。アルコールは食事とは別の欄です。</p>
             </article>
             <article class="step">
               <p class="idx">03</p>
-              <h3>戻す</h3>
-              <p>食べ過ぎた日も、超過を事実として見ます。隠さず、次の日の感覚を残すための記録です。</p>
+              <h3>確かめる</h3>
+              <p>食べ過ぎた日は、その日の超過として残ります。翌日の目標カロリーへは繰り越しません。</p>
             </article>
           </div>
         </section>
@@ -194,29 +360,31 @@
             <p class="essay-no">01</p>
             <h3>今日の残りを、先に出す。</h3>
             <p class="body">
-              食べたものを残すだけでは、次の食事は決まりません。目標に対して、今日あとどれだけか。カロナビがその数字を先に置きます。
+              食べたものを残すだけでは、次の食事は決まりません。目標に対して、今日あとどれだけか。超過も、その日の超過として見ます。翌日の目標には移しません。
             </p>
-            <p class="ribbon">判断が、記録より前に来る。</p>
+            <p class="ribbon">判断は、その日の数字でする。</p>
           </article>
 
           <article class="essay">
             <p class="essay-no">02</p>
             <h3>PFCは、同じ画面の目安。</h3>
             <p class="body">
-              カロリーだけでは、食事の中身は見えません。たんぱく質、脂質、炭水化物の目安を、今日の残りと一緒に確認できます。
+              カロリーだけでは、食事の中身は見えません。たんぱく質、脂質、炭水化物の目安を、今日の残りと一緒に確認できます。決め方は、画面の計算根拠で開けます。
             </p>
-            <p class="ribbon">数字は増やす。操作は増やさない。</p>
+            <p class="ribbon">目安は出す。断定はしない。</p>
           </article>
 
           <article class="essay">
             <p class="essay-no">03</p>
             <h3>入力は、続く短さで。</h3>
             <p class="body">
-              手で入れる。バーコードをカメラで読む。番号から探す。前に保存した食品、公開されている食品、テンプレートからも足せます。公開食品の検索は、無料では1日5回までです。
+              手で入れる。バーコードをカメラで読むか、番号を入力する。保存した食品、公開食品、テンプレートからも足せます。食事の写真から中身を自動では読み取りません。
             </p>
             <figure class="shot">
               <img
                 src="img/barcode-scan.jpg"
+                width="1152"
+                height="864"
                 alt="キッチンの光の中で、食品パッケージのバーコードをスマートフォンに向けている手元"
               />
               <figcaption class="ribbon">探す時間を、食事の時間に戻す。</figcaption>
@@ -225,16 +393,21 @@
 
           <article class="essay">
             <p class="essay-no">04</p>
-            <h3>運動は、食事と同じ収支へ。</h3>
+            <h3>運動の追加分だけ、今日の残りへ。</h3>
             <p class="body">
-              運動はMETによる計算か、kcalの直接入力です。歩いた分も、トレーニングの分も、摂取と切り離さない。今日のエネルギーとして戻します。
+              種目と時間からMETで計算するか、追加消費kcalを手入力します。ホームの残りカロリーに足されるのは、安静時を除いた追加分だけです。通勤や家事のようないつもの動きは、生活活動の係数に含まれ、追加運動には入れません。
+            </p>
+            <p class="body">
+              対応する端末では、Appleヘルスケアから歩数や運動を取り込めます。連携は任意です。ヘルスケアの当日消費カロリーは参考表示で、食事の目標には足しません。
             </p>
             <figure class="shot tall">
               <img
                 src="img/walk-street.jpg"
+                width="864"
+                height="1152"
                 alt="午後の並木道を、急がずに歩いている人の後ろ姿"
               />
-              <figcaption class="ribbon">頑張りの量を、今日の残りに戻す。</figcaption>
+              <figcaption class="ribbon">追加で動いた分だけ、今日の残りに足す。</figcaption>
             </figure>
           </article>
 
@@ -242,11 +415,13 @@
             <p class="essay-no">05</p>
             <h3>体重は、一日の点数にしない。</h3>
             <p class="body">
-              体重は一覧で追加、編集、削除できます。朝の一回で成否は決まりません。長い収支の結果として、静かに残します。
+              体重は追加、編集、削除ができます。2回以上記録すると推移が出ます。朝の一回で成否は決まりません。ヘルスケア連携をオンにしているときは、ヘルスケアの体重が優先されます。
             </p>
             <figure class="shot">
               <img
                 src="img/morning-scale.jpg"
+                width="1152"
+                height="864"
                 alt="朝のバスルーム。タオルと水のそばに、表示の見えない体重計が置かれている"
               />
               <figcaption class="ribbon">一日の良し悪しを、体重に預けない。</figcaption>
@@ -257,14 +432,16 @@
             <p class="essay-no">06</p>
             <h3>お酒は、食事と混ぜない。</h3>
             <p class="body">
-              アルコールは食事とは別の記録です。夜の一杯を、昼ごはんの誤差にしないためです。
+              アルコールは食事とは別の記録です。種類と量、度数から純アルコール量とカロリーを計算します。そのカロリーはPFC（たんぱく質・脂質・炭水化物）には配分しません。
             </p>
             <figure class="shot">
               <img
                 src="img/evening-drink.jpg"
+                width="1152"
+                height="864"
                 alt="夜のテーブル。グラスと枝豆、伏せたスマートフォンがランプの光に照らされている"
               />
-              <figcaption class="ribbon">夜は夜のまま、記録する。</figcaption>
+              <figcaption class="ribbon">夜は夜のまま、その日の記録にする。</figcaption>
             </figure>
           </article>
         </section>
@@ -272,12 +449,14 @@
         <figure class="quote-band">
           <img
             src="img/quiet-return.jpg"
+            width="864"
+            height="1152"
             alt="夕方の光が差す、静かな玄関。靴が一足置かれている"
           />
           <figcaption>
             <strong>外側は短く。<br />内側は、根拠に寄せる。</strong>
             <span>
-              画面に出すのは行動です。計算は、再現できる知見を優先して内側に置きます。分からないことは、分からないと伝えます。断定できないものは、断定しません。
+              画面に出すのは、その日の数字と次の操作です。計算は、再現できる式を優先して内側に置きます。分からないことは、分からないと伝えます。断定できないものは、断定しません。
             </span>
           </figcaption>
         </figure>
@@ -290,15 +469,16 @@
               <h3>向いている人</h3>
               <ul>
                 <li>「今日あとどれくらい？」を先に知りたい</li>
-                <li>記録より、判断を短くしたい</li>
-                <li>減量・維持・増量を、数字で見たい</li>
+                <li>食事、運動、体重、お酒を同じ日の収支で見たい</li>
+                <li>減量・維持・増量を、その日の数字で見たい</li>
               </ul>
             </article>
             <article class="card">
               <h3>向いていない人</h3>
               <ul>
                 <li>医師の診断や治療の代わりを求める方</li>
-                <li>食事写真の自動解析だけが欲しい方（現状の主機能ではありません）</li>
+                <li>食事写真の自動解析が欲しい方（実装されていません）</li>
+                <li>今日の超過を翌日の目標へ繰り越したい方（いまはありません）</li>
                 <li>ログインせずに使いたい方（GoogleまたはAppleが必要です）</li>
               </ul>
             </article>
@@ -307,29 +487,27 @@
 
         <section class="block price" id="price">
           <p class="kicker">Price</p>
-          <h2>まずは無料。<br />必要なら、カロナビ+。</h2>
+          <h2>金額は、<br />ストアの画面が正。</h2>
           <div class="price-grid">
             <article class="price-card">
-              <p class="tag">FREE</p>
-              <strong>無料</strong>
-              <p>公開食品の検索は1日5回まで。食事テンプレート3、運動テンプレート3。</p>
+              <p class="tag">このページ</p>
+              <strong>金額は断定しない</strong>
+              <p>ログイン後に、食事・運動・体重・アルコールの記録と、今日の残りを使えます。</p>
             </article>
             <article class="price-card plus">
-              <p class="tag">CALONAVI+</p>
-              <strong>月額480円</strong>
-              <p>
-                公開食品の検索や、テンプレートの上限を広げます。年額は4,800円の予定で、月額の12回より約2ヶ月分おトクです。
-              </p>
+              <p class="tag">STORE</p>
+              <strong>表示が正</strong>
+              <p>有料の機能がある場合、価格と内容は各ストアの購入画面の表示が正です。このページの数字ではありません。</p>
             </article>
           </div>
           <p class="note">
-            料金は作業上の予定価格です。最終の金額、内容、無料枠は App Store の購入画面の表示が正です。購入と復元はアプリ内で行います。
+            購入と復元はアプリ内で行います。定期購入の停止は、ストアの設定から行います。アプリを消すだけでは課金は止まりません。
           </p>
         </section>
 
         <section class="cta-band">
           <p>今日の残りだけ、<br />先に見てみる。</p>
-          <a class="btn" href="#download">基本無料ではじめる</a>
+          <a class="btn" href="#download">使いはじめる</a>
         </section>
 
         <section class="block scenes" id="scenes">
@@ -341,21 +519,21 @@
               <b>MORNING</b>
               <div>
                 <h3>出る前に、残りを見る。</h3>
-                <p>朝食のあと、今日あと何kcalかを確認してから家を出る。計算式は開きません。</p>
+                <p>朝食のあと、今日あと何kcalかを確認してから家を出る。体重を記録するなら、朝の値がぶれにくい、とアプリは案内します。</p>
               </div>
             </article>
             <article class="scene">
               <b>NOON</b>
               <div>
-                <h3>弁当は、バーコードで足す。</h3>
-                <p>昼の数分で入力を終えて、午後の残りだけを残す。</p>
+                <h3>弁当は、バーコードか保存食品で足す。</h3>
+                <p>昼の数分で入力を終えて、午後の残りだけを残す。写真から中身は読み取りません。</p>
               </div>
             </article>
             <article class="scene">
               <b>NIGHT</b>
               <div>
-                <h3>食べ過ぎは、隠さない。</h3>
-                <p>超過は超過のまま見る。お酒は食事と分けて、翌日の感覚を残す。</p>
+                <h3>食べ過ぎは、その日の超過のまま。</h3>
+                <p>超過は翌日の目標へ移しません。お酒は食事と分けて、その日の記録にします。</p>
               </div>
             </article>
           </div>
@@ -368,13 +546,25 @@
           <details>
             <summary>カロナビとは何ですか？</summary>
             <p>
-              食事・運動・体重をまとめて、「今日あと何kcalか」から次の一手を短くするエネルギー管理アプリです。診断や治療のアプリではありません。
+              食事・運動・体重・アルコールをその日の単位で見て、「今日あと何kcalか」とPFCの目安を表示するエネルギー管理アプリです。診断や治療のアプリではありません。表示は推定です。
+            </p>
+          </details>
+          <details open>
+            <summary>今日のカロリー超過は翌日に繰り越されますか？</summary>
+            <p>
+              いいえ。超過はその日の超過として表示します。翌日の目標カロリーへ自動で反映する機能は、いまありません。
             </p>
           </details>
           <details>
-            <summary>他の食事管理アプリと何が違いますか？</summary>
+            <summary>食事はどう記録しますか？</summary>
             <p>
-              他社のサービスを下げる比較はしません。記録や助言が厚いサービスがある一方、カロナビは「今日のエネルギー判断」を主役にした設計です。用途の違いです。
+              手入力、バーコード（カメラまたは番号）、保存した食品、公開食品、食事テンプレートです。食事写真の自動解析はありません。
+            </p>
+          </details>
+          <details>
+            <summary>運動はどう記録しますか？</summary>
+            <p>
+              種目と時間からMETで計算するか、追加消費kcalを手入力します。ホームの残りカロリーに足されるのは、安静時を除いた追加分だけです。対応する端末ではAppleヘルスケアから歩数や運動を取り込めます。ヘルスケアの当日消費カロリーは参考表示で、食事目標には足しません。連携は任意です。
             </p>
           </details>
           <details>
@@ -384,12 +574,12 @@
           <details>
             <summary>料金はいくらですか？</summary>
             <p>
-              基本機能には無料枠があります。カロナビ+の予定価格は月額480円、年額4,800円です。最終的な料金は App Store の購入画面の表示が正です。
+              このページでは金額を断定しません。有料の機能がある場合、価格と内容は各ストアの購入画面の表示が正です。
             </p>
           </details>
           <details>
             <summary>いつ使えますか？</summary>
-            <p>App Store で公開しています。このページからのストアリンクは、いま準備中です。</p>
+            <p>App Storeで公開しています。このページからのストアリンクは、いま準備中です。</p>
           </details>
           <details>
             <summary>医療目的で使えますか？</summary>
@@ -404,11 +594,11 @@
           <h2>今日、<br />あと何kcalか。</h2>
           <div class="panel">
             <p>
-              App Store で公開中です。<br />
+              App Storeで公開中です。<br />
               ストアへのリンクは準備中です。
             </p>
             <p class="micro">
-              基本機能は無料ではじめられます。カロナビ+は、必要な人だけの任意オプションです。
+              超過を翌日の目標カロリーへ繰り越す機能はありません。表示は推定で、診断や治療の代わりにはなりません。
             </p>
             <p class="micro">
               問い合わせ:
@@ -418,7 +608,7 @@
         </section>
 
         <section class="spec-wrap" aria-labelledby="spec-title">
-          <h2 id="spec-title" class="kicker" style="margin-bottom: 14px">Information</h2>
+          <h2 id="spec-title" class="kicker">Information</h2>
           <table class="spec">
             <tbody>
               <tr>
@@ -427,27 +617,31 @@
               </tr>
               <tr>
                 <th>区分</th>
-                <td>エネルギー管理アプリ。医療機器ではなく、診断・治療を目的としません。</td>
+                <td>エネルギー管理アプリ。医療機器ではなく、診断・治療を目的としません。表示は推定です。</td>
               </tr>
               <tr>
                 <th>主な機能</th>
                 <td>
-                  今日あと何kcalか、PFCの目安、食事（手入力・バーコード・保存食品・公開食品・テンプレート）、アルコールの別記録、運動（METまたはkcal直接入力）、体重の一覧と編集、目標（減量・維持・増量）
+                  今日あと何kcalか、その日の超過表示、PFCの目安、食事（手入力・バーコード・保存食品・公開食品・テンプレート）、アルコールの別記録、運動（METまたは追加消費kcalの手入力。追加分のみ今日の残りに加算）、体重の記録と推移、目標（減量・維持・増量）、任意のAppleヘルスケア連携、日ごとの履歴
+                </td>
+              </tr>
+              <tr>
+                <th>いまない機能</th>
+                <td>
+                  今日の超過を翌日の目標カロリーへ繰り越す機能。食事写真の自動解析。ゲスト利用。未来の日付への記録。
                 </td>
               </tr>
               <tr>
                 <th>ログイン</th>
-                <td>Google または Sign in with Apple。ゲスト利用はありません。</td>
+                <td>GoogleまたはSign in with Apple。ゲスト利用はありません。</td>
               </tr>
               <tr>
                 <th>料金</th>
-                <td>
-                  無料枠あり。カロナビ+の予定価格は月額480円／年額4,800円。最終表示は App Store の購入画面が正です。
-                </td>
+                <td>このページでは金額を断定しません。有料機能がある場合は、各ストアの購入画面の表示が正です。</td>
               </tr>
               <tr>
                 <th>提供</th>
-                <td>App Store で公開中。このページのストアリンクは準備中です。</td>
+                <td>App Storeで公開中。このページのストアリンクは準備中です。</td>
               </tr>
               <tr>
                 <th>運営</th>
@@ -469,7 +663,7 @@
               </tr>
               <tr>
                 <th>更新日</th>
-                <td>2026-09-25</td>
+                <td><time datetime="2026-09-25">2026-09-25</time></td>
               </tr>
             </tbody>
           </table>
@@ -479,7 +673,7 @@
       <footer class="site-foot">
         <p class="logo">カロナビ</p>
         <p>
-          診断・治療のアプリではありません。<br />
+          診断・治療のアプリではありません。超過の翌日繰り越しはありません。<br />
           運営: 麹池成<br />
           サポート:
           <a href="mailto:calonavi.ayg.support@gmail.com">calonavi.ayg.support@gmail.com</a><br />
@@ -492,7 +686,7 @@
     </div>
 
     <div class="dock">
-      <a href="#download">基本無料ではじめる</a>
+      <a href="#download">使いはじめる</a>
     </div>
     <script src="main.js"></script>
   </body>

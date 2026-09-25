@@ -1,14 +1,14 @@
 :root {
-  --ink: #163024;
-  --ink-soft: #3e5248;
-  --green: #1c6b3c;
-  --green-deep: #123d24;
+  --ink: #12261c;
+  --ink-soft: #24382e;
+  --green: #0e4a2b;
+  --green-deep: #0c3320;
   --green-soft: #e7f3eb;
   --cream: #fbf7f0;
   --paper: #fffdf9;
   --sand: #f3eee4;
   --line: #e2ddd2;
-  --muted: #6d7a72;
+  --muted: #3d4e45;
   --white: #fffdf9;
   --shadow: 0 24px 70px rgba(18, 40, 28, 0.16);
   --serif: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -29,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
   color: var(--ink);
   background:
     radial-gradient(900px 420px at 50% 0, rgba(255, 255, 255, 0.7), transparent 70%),
@@ -112,11 +113,11 @@ ol {
 .en,
 .logo-en {
   font-family: var(--sans);
-  font-weight: 500;
-  letter-spacing: 0.22em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-size: 11px;
-  color: var(--green);
+  font-size: 12px;
+  color: var(--green-deep);
 }
 
 h1,
@@ -276,9 +277,10 @@ h3 {
 
 .phone-note {
   margin-top: 10px;
-  font-size: 9px;
-  letter-spacing: 0.04em;
-  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
 }
 
 .price-line {
@@ -304,8 +306,8 @@ h3 {
 
 .micro {
   margin-top: 14px;
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--ink-soft);
+  font-size: 13px;
   line-height: 1.7;
 }
 
@@ -314,10 +316,11 @@ h3 {
   align-items: center;
   justify-content: center;
   width: min(100%, 420px);
+  min-height: 48px;
   margin: 22px auto 0;
   padding: 16px 22px;
   border-radius: 999px;
-  background: linear-gradient(180deg, #22844a 0%, #17673a 100%);
+  background: linear-gradient(180deg, #1a7a42 0%, #0e4a2b 100%);
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -563,8 +566,8 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 72px 28px 36px;
-  background: linear-gradient(180deg, transparent, rgba(10, 24, 16, 0.78));
+  padding: 96px 28px 36px;
+  background: linear-gradient(180deg, rgba(10, 24, 16, 0) 0%, rgba(8, 20, 14, 0.55) 38%, rgba(8, 20, 14, 0.92) 100%);
 }
 
 .quote-band strong {
@@ -579,9 +582,10 @@ h3 {
 .quote-band span {
   display: block;
   margin-top: 12px;
-  font-size: 13px;
+  max-width: 36em;
+  font-size: 15px;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.86);
+  color: #f7fbf8;
 }
 
 .fit-grid,
@@ -664,8 +668,8 @@ h3 {
 
 .note {
   margin-top: 16px;
-  color: var(--muted);
-  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-size: 13.5px;
   line-height: 1.8;
 }
 
@@ -691,8 +695,8 @@ h3 {
 
 .disclaimer {
   margin-top: 18px;
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--ink-soft);
+  font-size: 13px;
 }
 
 .faq details {
@@ -733,9 +737,7 @@ h3 {
 
 .download {
   text-align: center;
-  background:
-    linear-gradient(180deg, rgba(255, 253, 249, 0.2), rgba(255, 253, 249, 0.82)),
-    url("img/hero-morning.jpg") center 30% / cover;
+  background: var(--sand);
 }
 
 .download h2 {
@@ -745,12 +747,18 @@ h3 {
 .download .panel {
   margin-top: 22px;
   padding: 22px 18px;
-  background: rgba(255, 253, 249, 0.92);
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
 }
 
 .spec-wrap {
   background: #f6f4ef;
   padding-top: 36px;
+}
+
+.spec-wrap .kicker {
+  margin-bottom: 14px;
 }
 
 .spec {
@@ -828,6 +836,64 @@ h3 {
   display: none;
 }
 
+@media (max-width: 720px) {
+  .stage {
+    margin-bottom: 0;
+  }
+
+  .phone {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(240px, 78%);
+    margin: 16px 16px 0 auto;
+  }
+
+  .price-line {
+    margin-top: 28px;
+  }
+
+  .spec,
+  .spec tbody,
+  .spec tr,
+  .spec th,
+  .spec td {
+    display: block;
+    width: 100%;
+  }
+
+  .spec th {
+    border-bottom: 0;
+    padding-bottom: 4px;
+  }
+
+  .spec td {
+    padding-top: 0;
+  }
+
+  .scene {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .quote-band,
+  .quote-band img {
+    min-height: 0;
+    height: auto;
+  }
+
+  .quote-band img {
+    aspect-ratio: 4 / 5;
+    height: auto;
+  }
+
+  .quote-band figcaption {
+    position: static;
+    background: var(--green-deep);
+    padding: 28px 22px 32px;
+  }
+}
+
 @media (min-width: 800px) {
   body {
     padding: 36px 0 40px;
@@ -865,6 +931,33 @@ h3 {
     right: 36px;
     width: 210px;
   }
+
+  .steps,
+  .fit-grid,
+  .price-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1080px) {
+  :root {
+    --column: 960px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  .dek,
+  .lead,
+  .section-lead {
+    max-width: 38em;
+  }
 }
 
 @media (max-width: 380px) {
@@ -888,16 +981,21 @@ h3 {
   }
 
   .phone {
-    width: 158px;
-    right: 10px;
+    width: min(210px, 86%);
+    margin-right: 12px;
   }
 
   .phone-num {
-    font-size: 34px;
+    font-size: 36px;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
+  }
+
+  .worry-body {
+    padding-left: 0;
+    padding-top: 56px;
   }
 }
 
