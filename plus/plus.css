@@ -137,6 +137,7 @@ a {
 }
 
 .topbar-tag {
+  grid-column: 3;
   justify-self: end;
   padding: 3px 8px;
   border-radius: 999px;
@@ -166,8 +167,8 @@ a {
 }
 
 .hero {
-  padding-top: 26px;
-  padding-bottom: 8px;
+  padding-top: 22px;
+  padding-bottom: 4px;
 }
 
 .kicker {
@@ -212,7 +213,7 @@ h1 {
 }
 
 .widget-wrap {
-  margin: 22px 0 18px;
+  margin: 16px 0 12px;
 }
 
 .widget {
@@ -537,7 +538,7 @@ h2 {
 
 .plan {
   display: grid;
-  grid-template-rows: 18px 18px 34px 16px auto;
+  grid-template-rows: 18px 18px 34px auto auto;
   justify-items: center;
   align-items: center;
   gap: 3px;
@@ -592,14 +593,25 @@ h2 {
 }
 
 .plan-was {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
   min-height: 16px;
-  color: var(--was);
+  color: #66786f;
   font-size: 11px;
-  line-height: 1;
+  line-height: 1.2;
+}
+
+.was-label {
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .plan-was s {
-  text-decoration-thickness: 1px;
+  text-decoration-line: line-through;
+  text-decoration-color: #5d6f66;
+  text-decoration-thickness: 2px;
 }
 
 .plan-note {
@@ -608,6 +620,10 @@ h2 {
   line-height: 1.35;
   text-align: center;
   color: var(--ink);
+}
+
+.num {
+  white-space: nowrap;
 }
 
 .fine {
@@ -811,6 +827,7 @@ h2 {
 
 .modal-price {
   font-weight: 700;
+  white-space: pre-line;
 }
 
 .modal-next {
